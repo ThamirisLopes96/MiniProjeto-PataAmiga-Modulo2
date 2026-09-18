@@ -132,10 +132,11 @@ Já a dimensão praça é relacionada por meio da bridge_loja_praca, permitindo 
 
 O resultado por porte de loja foi:
 
-Porte	Integração → Separação	Separação → Nota	Nota → Despacho	Despacho → Entrega	Total
-Pequena	3,02	0,69	8,53	2,86	15,16
-Média	1,98	0,62	3,34	2,03	7,95
-Grande	1,96	0,64	3,32	2,01	7,93
+| Porte | Integração → Separação | Separação → Nota | Nota → Despacho | Despacho → Entrega | Total |
+|---|---:|---:|---:|---:|---:|
+| Pequena | 3,02 | 0,69 | 8,53 | 2,86 | 15,16 |
+| Média | 1,98 | 0,62 | 3,34 | 2,03 | 7,95 |
+| Grande | 1,96 | 0,64 | 3,32 | 2,01 | 7,93 |
 
 O maior tempo aparece na etapa Nota → Despacho.
 Ocorre nos três portes, porém com uma atenção maior nas de porte menor.
@@ -146,14 +147,15 @@ ________________________________________
 
 A distribuição encontrada foi:
 
-Categoria	Faturamento	Participação
-Racao	R$ 1.076.202,55	60,01%
-Medicamento	R$ 305.904,03	17,06%
-Petisco	R$ 128.590,16	7,17%
-Servico	R$ 94.001,37	5,24%
-Higiene	R$ 92.314,45	5,15%
-Acessorio	R$ 64.661,39	3,61%
-Brinquedo	R$ 31.634,56	1,76%
+| Categoria | Faturamento | Participação |
+|---|---:|---:|
+| Ração | R$ 1.076.202,55 | 60,01% |
+| Medicamento | R$ 305.904,03 | 17,06% |
+| Petisco | R$ 128.590,16 | 7,17% |
+| Serviço | R$ 94.001,37 | 5,24% |
+| Higiene | R$ 92.314,45 | 5,15% |
+| Acessório | R$ 64.661,39 | 3,61% |
+| Brinquedo | R$ 31.634,56 | 1,76% |
 
 A Racao representa aproximadamente 60% do faturamento.
 Também foi verificado o resultado por porte e a categoria continua sendo a de maior faturamento nas lojas pequenas, médias e grandes.
@@ -164,12 +166,13 @@ ________________________________________
 
 Os tickets médios encontrados foram:
 
-Canal	Sem desconto	Com desconto
-App	R$ 167,63	R$ 488,04
-Loja Física	R$ 197,55	R$ 494,04
-Site	R$ 189,68	R$ 501,92
-Telefone	R$ 195,23	R$ 514,02
-WhatsApp	R$ 179,26	R$ 514,33
+| Canal | Sem desconto | Com desconto |
+|---|---:|---:|
+| App | R$ 167,63 | R$ 488,04 |
+| Loja Física | R$ 197,55 | R$ 494,04 |
+| Site | R$ 189,68 | R$ 501,92 |
+| Telefone | R$ 195,23 | R$ 514,02 |
+| WhatsApp | R$ 179,26 | R$ 514,33 |
 
 Os pedidos com desconto tiveram ticket médio maior em todos os canais analisados.
 O App também teve uma participação importante no faturamento, representando 27,70% do total, com R$ 496.822,22.
@@ -177,64 +180,90 @@ Porém, não considero correto afirmar somente com esses dados que o desconto fe
 Para verificar realmente o efeito do desconto seria necessário fazer uma análise mais específica.
 ________________________________________
 4. Qual praça concentra o faturamento?
+
 Para essa análise foi utilizado o fator de público da tabela bridge_loja_praca.
+
 O maior resultado foi encontrado no Vale do Itajai:
-•	148.000 domicílios com pet;
-•	R$ 633.746,09 de faturamento rateado;
-•	R$ 4,28 por domicílio.
+
+- **148.000** domicílios com pet;
+- **R$ 633.746,09** de faturamento rateado;
+- **R$ 4,28** de faturamento por domicílio.
+
 A comparação com as outras praças mostrou:
-Praça	Faturamento rateado
-Vale do Itajai	R$ 633.746,09
-Grande Florianopolis	R$ 283.546,75
-Norte Industrial	R$ 175.431,90
-Litoral Sul	R$ 137.051,20
-Litoral Norte	R$ 128.872,75
+
+| Praça | Faturamento rateado |
+|---|---:|
+| Vale do Itajaí | R$ 633.746,09 |
+| Grande Florianópolis | R$ 283.546,75 |
+| Norte Industrial | R$ 175.431,90 |
+| Litoral Sul | R$ 137.051,20 |
+| Litoral Norte | R$ 128.872,75 |
+
 O uso do fator é importante porque uma loja pode atender mais de uma praça. Sem esse cálculo, o faturamento de uma loja poderia ser contado mais de uma vez.
-Conferência
-O faturamento rateado das praças foi:
-R$ 1.792.322,21
-Somando os pedidos sem loja:
-R$ 986,30
-Temos:
-R$ 1.793.308,51
+
+Conferência:
+
+O faturamento rateado das praças foi: R$ 1.792.322,21
+Somando os pedidos sem loja: R$ 986,30
+Temos: R$ 1.793.308,51
+
 Esse valor é igual ao faturamento total da fato.
 ________________________________________
 5. Expansão da rede
+
 a) Itens vendidos por mil habitantes
+
 As lojas com maiores índices encontrados foram:
-Loja	Itens por 1.000 habitantes	Tempo médio de entrega
-Rio dos Cedros	41,87	14,24 dias
-Presidente Getúlio	34,84	14,16 dias
-Ibirama	32,07	15,39 dias
-Itapoá	25,94	15,39 dias
-Santo Amaro da Imperatriz	23,71	15,88 dias
+
+| Loja | Itens por 1.000 habitantes | Tempo médio de entrega |
+|---|---:|---:|
+| Rio dos Cedros | 41,87 | 14,24 dias |
+| Presidente Getúlio | 34,84 | 14,16 dias |
+| Ibirama | 32,07 | 15,39 dias |
+| Itapoá | 25,94 | 15,39 dias |
+| Santo Amaro da Imperatriz | 23,71 | 15,88 dias |
+
 Rio dos Cedros apresentou o maior indicador.
 Um ponto que achei interessante foi que as lojas com maior venda relativa também possuem tempos de entrega relativamente altos. Isso pode indicar que existe demanda, mas a operação também precisa ser analisada.
+
 b) Faixa das franquias
+
 Considerando a faixa atual cadastrada:
-Faixa	Faturamento
-Ouro	R$ 1.011.264,38
-Diamante	R$ 382.209,74
-Prata	R$ 314.812,03
-Bronze	R$ 84.036,06
+
+| Faixa | Faturamento |
+|---|---:|
+| Ouro | R$ 1.011.264,38 |
+| Diamante | R$ 382.209,74 |
+| Prata | R$ 314.812,03 |
+| Bronze | R$ 84.036,06 |
+
 As lojas Ouro apresentam o maior faturamento.
+
 Mas existe uma limitação importante: essa é a classificação atual. O histórico da faixa não foi preservado.
 Portanto, não dá para saber se uma loja que hoje é Ouro também era Ouro quando determinado pedido aconteceu.
+
 c) Dados incompletos
+
 Na fato ficaram:
-•	3 pedidos sem loja;
-•	1.953 sem entrega;
-•	257 sem quantidade de itens;
-•	121 sem valor.
+
+- **3 pedidos** sem loja;
+- **1.953 pedidos** sem entrega;
+- **257 pedidos** sem quantidade de itens;
+- **121 pedidos** sem valor.
+
 O número de pedidos sem entrega é especialmente relevante, porque representa aproximadamente 48,29% da base.
 ________________________________________
 Conclusão
+
 Depois de realizar o tratamento e as análises, os dados mostram três pontos que considero mais importantes:
+
 1.	o principal gargalo está entre a emissão da nota e o despacho;
 2.	Racao representa a maior parte do faturamento da rede;
 3.	algumas lojas pequenas apresentam alta quantidade de itens vendidos por habitante, mas também possuem tempos de entrega elevados.
 Para uma possível expansão, eu começaria investigando Rio dos Cedros, seguida pelas outras localidades com indicadores altos.
 Isso não significa que os dados sejam suficientes para decidir sozinhos onde abrir uma loja. Antes da decisão seria importante analisar concorrência, custos, demanda, logística e potencial de crescimento.
+
+
 ________________________________________
 Validações
 No final da construção foram conferidos os principais resultados:
